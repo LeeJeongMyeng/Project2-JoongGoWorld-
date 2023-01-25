@@ -1,0 +1,132 @@
+@charset "UTF-8";
+*{
+	margin:0;
+	padding:0;
+	}
+ul,li{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+	color:inherit;
+}
+
+.Gesi1_wrap{
+background:pink
+}
+#gesiTitle{
+	text-align: center;
+	padding: 50px 0;
+}
+
+.gesitb{
+	width:1000px;
+    border-collapse: collapse;
+	border:1px solid black;
+	margin:0 auto;
+	font-weight:bold;
+}
+
+.gesitb tr *{
+	padding: 4px;
+    font-size: 15px;
+    /* border-bottom: 2px solid #c8c8c8; */
+    border: none;
+    background: none;
+    /* font-weight: 900; */
+}
+
+.gesitb tr td form input[type=submit]:hover{
+	cursor:pointer;
+	text-decoration:underline;
+}
+
+.gesitb thead tr:first-child{
+	background:#fb6544;
+	
+}
+
+.gesitb th{
+font-size:130%;
+color:white;
+}
+.gesitb thead tr:first-child{
+	border-bottom:3px solid white;
+}
+
+.gesitb .gesi_numh{
+width:10%;
+}
+.gesitb .gesi_writerh{
+width:15%;
+}
+.gesitb .gesi_titleh{
+width:50%;
+}
+.gesitb .gesi_dateh{
+width:15%;
+}
+.gesitb .gesi_status{
+width:10%;
+}
+
+.gesitb .gesi_numb{
+	text-align:center;
+	font-weight:bold;
+}
+.gesitb .gesi_writerb,
+.gesitb .gesi_status,
+.gesitb .gesi_dateb{
+text-align:center;
+}
+
+
+
+.gesitb tr:nth-child(2n){
+background:rgba(249,237,217,0.5)
+}
+
+
+
+/*페이지네이션*/
+.pagination_wrap{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.pagination{
+	background: #fff;
+    padding-top: 9px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 37px;
+    width: 400px;
+}
+#numbers{
+	padding:0;
+	margin: 0 2rem;
+	list-style-type:none;
+	display:flex; 
+}
+#numbers li a{
+	color:#333;
+	padding: .5rem 1rem;
+	text-decoration:none;
+	opacity:0.7;
+}
+#numbers li a:hover{
+	opacity:1;
+}
+#numbers li a.active{
+	opacity:1;
+	background:#333;
+	color:#fff;
+}
+
+.pagination i{
+	color:#333;
+	font-size:1.2em;
+}

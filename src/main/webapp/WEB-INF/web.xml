@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+ 
+ 
+ 	<session-config>
+ 		<session-timeout>30</session-timeout>
+ 	</session-config>
+ 
+ 
+ 
+  <error-page>
+         <exception-type>java.lang.Exception</exception-type>
+         <location>/error/AllError.jsp</location>
+      </error-page>
+ 
+ 
+ 
+ 
+ 
+  <context-param>
+  	<description>로깅 여부</description>
+  	<param-name>logEnagled</param-name>
+  	<param-value>true</param-value>
+  </context-param>
+  <context-param>
+  	<description>디버깅 레벨</description>
+  	<param-name>debugLevel</param-name>
+  	<param-value>5</param-value>
+  </context-param>
+  
+  
+  
+  <context-param>
+  	<param-name>ip</param-name>
+  	<param-value>localhost</param-value>
+  </context-param>
+  <context-param>
+  	<param-name>port</param-name>
+  	<param-value>1521</param-value>
+  </context-param>
+  <context-param>
+  	<param-name>sid</param-name>
+  	<param-value>xe</param-value>
+  </context-param>
+  <context-param>
+  	<param-name>username</param-name>
+  	<param-value>scott</param-value>
+  </context-param>
+  <context-param>
+  	<param-name>pass</param-name>
+  	<param-value>tiger</param-value>
+  </context-param>
+   
+  
+  
+  
+  
+  
+  
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+</web-app>

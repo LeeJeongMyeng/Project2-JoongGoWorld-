@@ -1,0 +1,151 @@
+@charset "UTF-8"
+
+
+#MC1{
+ background:pink;
+}
+
+
+#MC2{
+	 background-image: url(../img/main/intro.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: relative;
+}
+
+#MC3{
+ background-image: url(../img/main/top3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: relative;
+}
+
+
+#MC4{
+/* background:skyblue; */
+}
+
+/*=======================================================================*/
+.Main_Container_Wrap{ /*가로형 웹페이지 전체*/
+	width:400vw; /* 300%라는의미 */
+	transition:transform 0.9s;
+}
+
+.Main_Container{
+	width:100vw;
+	float:left;
+	min-height: 791px;
+    max-height: 791px;
+	border-left:1px solid black;
+	border-right:1px solid black;
+	/* border-bottom:1px solid black; */
+}
+
+/*=========메인창 메뉴사진+버튼============*/
+
+
+.WelCome{
+	/* background: yellow; */
+    min-width: 500px;
+    height: 454px;
+    margin: 31px 0 0 0;
+    text-align:center;
+}
+.WelCome h2{
+	position: absolute;
+    top: 50%;
+    left: 38%;
+    font-size: 180%;
+    text-shadow: 1px 2px 1px grey;
+}
+.Main1_wrap .Main{
+	display:flex;
+    padding: 110px 0 0 270px;
+}
+
+.Main1_wrap .Main div img{
+	width: 322px;	
+}
+
+.Main .GoProd,
+.Main .GoJoin,
+.Main .GoNotice{
+	position: relative;
+	margin: 33px 55px 0 72px;
+}
+
+.Main1_wrap .Main input[type=button]{
+	position:absolute;
+	cursor: pointer;
+}
+
+.Main1_wrap .Main .GoProd #Main_toProd{
+	width: 228px;
+    height: 50px;
+    bottom: 24px;
+    left: 45px;
+    border: none;
+    border-radius: 5px;
+    font-size: 22px;
+    font-weight: bold;
+    color: black;
+}
+.Main1_wrap .Main .GoJoin #Main_SignUp,
+.Main1_wrap .Main .GoJoin #Main_Login{
+	bottom: 24px;
+    height: 50px;
+    width: 119px;
+    border: none;
+    border-radius: 5px;
+    font-size: 22px;
+    font-weight: bold;
+    color: black;
+    background: white
+}
+
+.Main1_wrap .Main .GoJoin #Main_SignUp{
+	left: 29px;
+}
+.Main1_wrap .Main .GoJoin #Main_Login{
+	right: 26px;
+	position: absolute;
+}
+
+.Main1_wrap .Main .GoJoin #Main_Login>div{
+	position: absolute;
+    top: 7px;
+    left: 24px;
+}
+
+.Main1_wrap .Main .GoNotice #Main_notice{
+	bottom: 50px;
+    left: 3px;
+    width: 205px;
+    height: 82px;
+    border: none;
+    border-radius: 5px;
+    background: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.gesiBtnWrap{
+	position:relative;
+}
+
+#InsertQnA{
+	position: absolute;
+    right: -315px;
+    top: -43px;
+    width: 100px;
+    height: 42px;
+    background: #A83CA8;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 18px;
+    font-weight: 900;
+}
+

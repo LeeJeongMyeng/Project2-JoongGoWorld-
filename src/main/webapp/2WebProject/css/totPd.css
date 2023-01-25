@@ -1,0 +1,149 @@
+@charset "UTF-8";
+*{
+   margin:0px;
+   padding:0px;
+   color: #444444;
+   box-sizing:border-box;
+}
+
+
+a{
+   text-decoration: none;
+}
+
+li{
+    list-style:none;
+ }
+
+#InserProdBtn{
+	position: absolute;
+    right: 585px;
+    top: 234px;
+    width: 140px;
+    height: 46px;
+    font-size: 141%;
+    color: white;
+    background: #A83CA8;
+    border: none;
+    border-radius: 12px;
+    font-weight: 500;
+}
+.flex-container{
+  	width: 1200px;
+    height: 766px;
+    border: 1px solid lightgray;
+    border-radius: 12px;
+    margin: 0 auto; 
+  }
+  
+.flex-item{
+    border: 1px solid lightgray;
+    display: inline-grid;
+    width: 222px;
+    height: 320px;
+    float: left;
+    margin: 30px 36px 40px 41px;
+    position:relative;
+}
+.flex_item_label{
+	cursor:pointer;
+} 
+#myprod{
+	position: absolute;
+    right: -14px;
+    top: -24px;
+    width: 43px;
+} 
+
+
+#poster{
+    text-align: center;
+    padding: 6px;
+    border: 1px solid #d3d3d3;
+    border-radius: 10px 10px 10px 10px;
+    width: 80%;
+    height: 166px;
+    margin-left: 20px;
+    margin-top: 10px;
+}  
+  
+#title_price{
+   margin-left: 18px;
+   position: relative;
+}
+#title_price>img{
+	width: 25px;
+    position: absolute;
+    bottom: 8px;
+    right: 20px;
+}
+
+.title{
+  font-weight: 800;
+  fint-size:16px;
+}
+.loc{
+  color:lightgray;
+  font-size:15px;
+}
+.price{
+  /* color:orange; */
+}
+
+#likecount,#viewcount{
+	color: gray;
+    font-size: 15px;
+    margin-top: 6px;
+
+}
+
+#SerchProd_Title{
+	text-align: center;
+    padding: 55px;	
+}
+
+
+.pagination_wrap{
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.pagination{
+   background: #fff;
+    padding-top: 9px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 37px;
+    width: 1600px;
+    margin-left: 226px;
+    margin-top: 17px;
+}
+#numbers{ 
+   padding:0;
+   margin: 0 2rem;
+   list-style-type:none;
+   display:flex; 
+}
+#numbers li a{
+   color:#333;
+   padding: .5rem 1rem;
+   text-decoration:none;
+   opacity:0.7;
+}
+
+#numbers li a:hover{
+   opacity:1;
+}
+#numbers li a.active{
+   opacity:1;
+   background:#333;
+   color:#fff;
+}
+
+.pagination i{
+   color:#333;
+   font-size:1.2em;
+}

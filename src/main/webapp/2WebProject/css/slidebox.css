@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+	.slidebox {
+		max-width: 600px;
+    	margin: 0 auto;
+    	margin-top: 95px;
+    	position: relative;
+   /*  background: yellow; */
+    	height: 400px;
+	}		
+	.slidebox .slidelist {
+		position: relative;
+    	white-space: nowrap;
+   	 	font-size: 0;
+    	overflow: hidden;
+    /* background: yellow; */
+    	width: 100%;
+    	height: 100%;
+	}
+	.slidebox .slidelist .slideitem {
+		position:relative;
+		display:inline-block;
+		vertical-align:middle;
+		background-color:#fff;
+		width:100%;
+		transition:all .5s;
+		height: 100%;
+		border: 2px solid #c8c8c8;
+	}
+	.slidebox .slidelist .slideitem > a {
+		display:block;
+		width:auto;
+		position:relative;
+		height: 100%;
+	}
+	.slidebox .slidelist .slideitem > a img {
+		max-width:700px;
+		border-radius: 6px;
+		border-radius: 6px;
+    	width: 100%;
+    	height: 100%;
+	}	
+	.slidebox .slide-control [class*="control"] label {
+		position:absolute;
+		z-index:10;
+		top:50%;
+		transform:translateY(-50%);
+		padding:20px;
+		border-radius:50%;
+		cursor:pointer;
+	}
+	.slidebox .slide-control [class*="control"] label.prev {
+		left:-50px;
+		background:url('../img/main/left.png') center center / 50% no-repeat;
+	}
+	.slidebox .slide-control [class*="control"] label.next {
+		right:-50px;
+		background:url('../img/main/right.png') center center / 50% no-repeat;
+	}	
+	[name="slide"] {display:none;}
+	#slide1:checked ~ .slidelist .slideitem {left:0;}
+	#slide2:checked ~ .slidelist .slideitem {left:-100%;}
+	#slide3:checked ~ .slidelist .slideitem {left:-200%;}
+	
+	.slide-control [class*="control"] {display:none;}
+	#slide1:checked ~ .slide-control .control1 {display:block;}
+	#slide2:checked ~ .slide-control .control2 {display:block;}
+	#slide3:checked ~ .slide-control .control3 {display:block;}
+	
+	.slide-pagelist {
+		text-align:center;
+		padding:10px 10px 0 10px;
+	}
+	.slide-pagelist > li {
+		display:inline-block;
+		vertical-align:middle;
+	}
+	.slide-pagelist > li > label {
+		display:block;
+		padding:5px 5px;
+		border-radius:30px;
+		background:#ccc;
+		margin:0px 4px;
+		cursor:pointer;
+	}
+	.slidebox input[id="slide1"]:checked ~ .slide-pagelist > li:nth-child(1) > label {background:#999;}
+	.slidebox input[id="slide2"]:checked ~ .slide-pagelist > li:nth-child(2) > label {background:#999;}
+	.slidebox input[id="slide3"]:checked ~ .slide-pagelist > li:nth-child(3) > label {background:#999;}

@@ -1,0 +1,160 @@
+@charset "UTF-8";
+
+*{
+	margin:0px;
+	padding:0px;
+	color: #444444; 
+	box-sizing:border-box;	
+	font-family: 'Noto Sans KR', sans-serif !important;
+}
+a{
+	text-decoration: none;
+}
+li{
+ 	list-style:none;
+ } 
+body{
+padding-top: 138px;
+}
+.box {
+	width:1500px;
+ 	 margin:0 auto; 
+ 	/* border:1px solid orange;  */
+}
+
+.top_wrap{
+	background: #f79d0c;
+    width: 100vw;
+    height: 138px;
+    position: fixed;
+    left:0;
+    top:0;
+    z-index: 100;
+    box-shadow: 0 1px 9px 0 black;
+	display: flex;
+}
+.Top{
+    display: flex;
+    padding: 47px 0 0 0px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.top_wrap .Logo a img{
+	margin: 15px 40px 0 34px;
+	width: 208px;
+}
+.top_wrap .Top .Menubox{
+	/* background: yellow; */
+    width: 552px;
+}
+
+.top_wrap .Top .Menubox ul{
+	display:flex;
+	color:white;
+}
+.top_wrap .Top .Menubox ul li{
+	margin:0 30px 0 0;
+	
+}
+.top_wrap .Top .Menubox ul li button{
+	color: white;
+    background: none;
+    font-size: 21px;
+    font-weight: bold;
+    border:none;
+    cursor:pointer;
+}
+
+#horizon_underLine{ /*상단 메뉴 언더라인 이벤트*/
+	position: absolute;
+    width: 0px;
+    background: purple;
+    top: 94px;
+    left: 0;
+    height: 6px;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+
+
+.top_wrap .Top form{
+	margin: 0px 0 0 0px;
+	position:relative;
+}
+.top_wrap .Top .SearchProdForm input[type=text]{
+    width: 431px;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    margin-left: 66px;
+}
+ .top_wrap .Top .SearchProdForm input[type=submit]{
+    position: absolute;
+    top: 1px;
+    right: 0px;
+    width: 80px;
+    height: 50px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background: #A83CA8;
+    color: white;
+    font-size: 17px;
+} 
+
+
+.Top .Top_UserInfo{
+	background: #FDF5E6;
+    height: 123px;
+    position: absolute;
+    top: 7px;
+    right: 184px;
+    width: 378px;
+    display: flex;
+    border-radius: 30px;
+}
+
+.Top_UserInfo #User_Profile_image>img{
+	margin: 15px;
+    width: 69px;
+}
+.Top_UserInfo #User_Profile_image2>img{
+	margin: 15px 15px 15px 15px;
+    width: 69px;
+}
+
+.Top_UserInfo #User_Information{
+	font-size: 18px;
+    margin: 13px 7px 0px 12px;
+    height: 93px;
+    width: 131px;
+}
+.Top_UserInfo #User_Count_Info{
+	font-size: 14px;
+    margin: 14px 0 0 0;
+}
+
+.Top_UserInfo #User_Information ul li{
+	margin-bottom:3px;
+}
+
+.Top_UserInfo #User_Count_Info ul li{
+	margin-bottom:2px;
+}
+
+#LogoutBtn{
+	font-size: 15px;
+    position: absolute;
+    bottom: 0;
+    right: 211px;
+    color: red !important;
+}
+#MyPegeBtn{
+	font-size: 15px;
+    position: absolute;
+    bottom: 0;
+    right: 122px;
+}
+
+

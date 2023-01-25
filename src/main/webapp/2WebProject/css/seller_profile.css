@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+	#profile {
+		width: 677px;
+		margin: 0 auto;
+		margin-top: 27px;
+	}
+	#profile #profile_link{
+		display: block;
+	    margin-top: 25px;
+	   /*  padding-bottom: 23px; */
+	}
+	#profile #space{
+		display: flex;
+		justify-content: space-between;
+   		align-items: center;
+   		/* border-bottom: 1px solid rgb(234, 235, 238); */
+	}
+	#profile #seller{
+		display: flex;
+	}
+	#profile #profile_img img{
+		width: 64px;;
+    	height: 48px;
+    	margin:7px;
+	}
+	#profile #seller_info {
+		margin-left: 8px;
+		margin-top: 10px;
+		line-height: 1.5;
+	}
+	#profile #seller_info #writer {
+		font-size: 15px;
+	    font-weight: 600;	    
+	}
+	#profile #seller_info #loc {
+		font-size: 14px;	    
+	}
+	#menu img{
+		width: 25px;
+    	height: 25px;
+	}
+	#sellerMenu {
+		display: none;
+		position: absolute;
+		text-align: center;
+		background-color: white;
+		width: 50px;
+		margin: 0;
+		padding: 0;
+	}
+	#sellerMenu li {
+		margin: 5px;
+	}
+	#menu:hover #sellerMenu {
+		display: block;
+		border-radius: 6px;
+	    box-shadow: rgb(221,221,221) 0 0 20px 0;
+	}
+	#sellerMenu a:hover {
+	    color: rgb(142, 68, 173);	
+   		text-decoration-line: underline;
+	}
